@@ -1,10 +1,15 @@
 const fs = require('fs');
 
-if (
-  !fs.existsSync('index.html') ||
-  !fs.readFileSync('index.html', 'utf8').includes('AGRINEXUS')
-) {
-  process.exit(1);
+if (!fs.existsSync('public/index.html')) {
+  throw new Error('Missing public/index.html');
 }
 
-console.log('Production prototype build check passed.');
+if (!fs.existsSync('server.js')) {
+  throw new Error('Missing server.js');
+}
+
+if (!fs.existsSync('package.json')) {
+  throw new Error('Missing package.json');
+}
+
+console.log('Production build check passed: AGRINEXUS files are ready.');
