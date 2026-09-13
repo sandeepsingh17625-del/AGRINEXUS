@@ -1,0 +1,7 @@
+{
+  "name":"agrinexus-e-mandi-mitra",
+  "version":"1.0.0",
+  "private":true,
+  "scripts":{"dev":"node server.js","start":"node server.js","build":"node build.js"},
+  "description":"AGRINEXUS Smart India Hackathon 2026 prototype"
+}
