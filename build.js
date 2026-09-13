@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-if (!fs.existsSync('index.html')) {
-  throw new Error('Missing index.html');
+if (!fs.existsSync('public/index.html')) {
+  throw new Error('Missing public/index.html');
 }
 
 if (!fs.existsSync('server.js')) {
